@@ -1,0 +1,29 @@
+ <?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Copyright</Title>
+      <Shortcut>Copyright</Shortcut>
+      <Description>Code snippet for Copyright notice</Description>
+      <Author>Landon Kirk</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="false">
+          <ID>classname</ID>
+          <Function>ClassName()</Function>
+        </Literal>
+      </Declarations>
+      <Code Language="CPP">
+        <![CDATA[// <copyright file="$classname$" company="My Company Name">
+      // Copyright (c) 2016 All Rights Reserved
+      // <author>Landon Kirk (landonaddison@yahoo.com) </author>
+      // </copyright>
+      ]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

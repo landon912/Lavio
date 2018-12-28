@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Source\Graphics\Color.cpp" />
+    <ClCompile Include="Source\Graphics\ColorSet.cpp" />
+    <ClCompile Include="Source\Graphics\GUI\FontManager.cpp" />
+    <ClCompile Include="Source\Graphics\Graphic.cpp" />
+    <ClCompile Include="Source\Graphics\GUI\Label.cpp" />
+    <ClCompile Include="Source\Graphics\Layers\FontLayer.cpp" />
+    <ClCompile Include="Source\Graphics\Layers\Layer.cpp" />
+    <ClCompile Include="Source\Graphics\Layers\TileLayer.cpp" />
+    <ClCompile Include="Source\Graphics\Textures\ImageLoader.cpp" />
+    <ClCompile Include="Source\Math\Matrix\Matrix2x2.cpp" />
+    <ClCompile Include="Source\Objects\GameObject.cpp" />
+    <ClCompile Include="Source\Objects\Hierarchy.cpp" />
+    <ClCompile Include="Source\Objects\Transform.cpp" />
+    <ClCompile Include="Source\Platform\Factories\BufferFactory.cpp" />
+    <ClCompile Include="Source\Platform\Factories\FontFactory.cpp" />
+    <ClCompile Include="Source\Platform\Factories\InputFactory.cpp" />
+    <ClCompile Include="Source\Platform\Factories\RendererFactory.cpp" />
+    <ClCompile Include="Source\Platform\Factories\ShaderFactory.cpp" />
+    <ClCompile Include="Source\Platform\Factories\TextureFactory.cpp" />
+    <ClCompile Include="Source\Platform\Factories\WindowFactory.cpp" />
+    <ClCompile Include="Source\IO\Utilities\FileUtility.cpp" />
+    <ClCompile Include="Source\Math\Matrix\Matrix4x4.cpp" />
+    <ClCompile Include="Source\Math\Rect.cpp" />
+    <ClCompile Include="Source\Math\Vector\Vector2.cpp" />
+    <ClCompile Include="Source\Math\Vector\Vector3.cpp" />
+    <ClCompile Include="Source\Math\Vector\Vector4.cpp" />
+    <ClCompile Include="Source\World.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Graphics\Buffers\IBuffer.h" />
+    <ClInclude Include="Source\Graphics\Buffers\IIndexBuffer.h" />
+    <ClInclude Include="Source\Graphics\Buffers\IVertexArray.h" />
+    <ClInclude Include="Source\Graphics\Color.h" />
+    <ClInclude Include="Source\Graphics\ColorComponents.h" />
+    <ClInclude Include="Source\Graphics\ColorSet.h" />
+    <ClInclude Include="Source\Graphics\GUI\FontManager.h" />
+    <ClInclude Include="Source\Graphics\GUI\IFont.h" />
+    <ClInclude Include="Source\Graphics\GUI\Label.h" />
+    <ClInclude Include="Source\Graphics\IShader.h" />
+    <ClInclude Include="Source\Graphics\IWindow.h" />
+    <ClInclude Include="Source\Graphics\Layers\FontLayer.h" />
+    <ClInclude Include="Source\Graphics\Layers\Layer.h" />
+    <ClInclude Include="Source\Graphics\Layers\TileLayer.h" />
+    <ClInclude Include="Source\Graphics\Textures\ImageData.h" />
+    <ClInclude Include="Source\Graphics\Textures\ImageLoader.h" />
+    <ClInclude Include="Source\Graphics\Textures\ITexture.h" />
+    <ClInclude Include="Source\Graphics\VertexData.h" />
+    <ClInclude Include="Source\LavioDefines.h" />
+    <ClInclude Include="Source\Math\Matrix\Matrix2x2.h" />
+    <ClInclude Include="Source\Objects\Component.h" />
+    <ClInclude Include="Source\Objects\EventSubscriber.h" />
+    <ClInclude Include="Source\Objects\GameObject.h" />
+    <ClInclude Include="Source\Objects\Hierarchy.h" />
+    <ClInclude Include="Source\Objects\Transform.h" />
+    <ClInclude Include="Source\Platform\APIManager.h" />
+    <ClInclude Include="Source\Platform\Factories\BufferFactory.h" />
+    <ClInclude Include="Source\Graphics\Graphic.h" />
+    <ClInclude Include="Source\Graphics\IRenderer2D.h" />
+    <ClInclude Include="Source\IO\Utilities\Timer.h" />
+    <ClInclude Include="Source\Platform\Factories\FontFactory.h" />
+    <ClInclude Include="Source\Platform\Factories\InputFactory.h" />
+    <ClInclude Include="Source\Platform\Factories\RendererFactory.h" />
+    <ClInclude Include="Source\Platform\Factories\ShaderFactory.h" />
+    <ClInclude Include="Source\Platform\Factories\TextureFactory.h" />
+    <ClInclude Include="Source\Platform\Factories\WindowFactory.h" />
+    <ClInclude Include="Source\Platform\RenderAPI.h" />
+    <ClInclude Include="Source\IO\Input\IInput.h" />
+    <ClInclude Include="Source\IO\Utilities\FileUtility.h" />
+    <ClInclude Include="Source\Math\Math.h" />
+    <ClInclude Include="Source\Math\Matrix\Matrix4x4.h" />
+    <ClInclude Include="Source\Math\Rect.h" />
+    <ClInclude Include="Source\Math\Vector\Vector2.h" />
+    <ClInclude Include="Source\Math\Vector\Vector3.h" />
+    <ClInclude Include="Source\Math\Vector\Vector4.h" />
+    <ClInclude Include="Source\Math\VectorMath.h" />
+    <ClInclude Include="Source\World.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Snippets\Copyright.snippet" />
+    <None Include="OpenGLContext.dll" />
+    <None Include="Source\Objects\GameObject.inl" />
+    <None Include="Source\Platform\OpenGL\Shader\basic.frag" />
+    <None Include="Source\Platform\OpenGL\Shader\basic.vert" />
+    <None Include="Source\Platform\OpenGL\Shader\font.frag" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="OpenGLContext.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Debug\Debug.vcxproj">
+      <Project>{69e8eb48-ba25-4e34-bb70-38093a719c20}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\OpenGLContext\OpenGLContext.vcxproj">
+      <Project>{87d973ae-d7e9-4e75-90f2-3ccc5355362f}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="SpiderV1.png" />
+    <Image Include="SpiderV1NoTrans.png" />
+    <Image Include="Test.png" />
+    <Image Include="Test1.png" />
+    <Image Include="Test2.png" />
+    <Image Include="transTest.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="arial.ttf" />
+    <Font Include="Manuscrit-Regular.ttf" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{56B6937D-88E0-4591-A999-F65F470985F8}</ProjectGuid>
+    <RootNamespace>Lavio</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <ProjectName>LavioEngine</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(SolutionDir)Dependencies/FreeImage/include;$(SolutionDir)Dependencies/GLFW/include;$(SolutionDir)Dependencies/GLEW/include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)Dependencies\FreeImage\lib;$(SolutionDir)Dependencies\GLFW\lib-vc2015;$(SolutionDir)Dependencies\GLEW\lib;$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)bin\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)bin\$(Configuration)\Intermediates\LavioEngine\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(SolutionDir)Dependencies/FreeImage/include;$(SolutionDir)Dependencies/GLFW/include;$(SolutionDir)Dependencies/GLEW/include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)Dependencies\FreeImage\lib;$(SolutionDir)Dependencies\GLFW\lib-vc2015;$(SolutionDir)Dependencies\GLEW\lib;$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)bin\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)bin\$(Configuration)\Intermediates\LavioEngine\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(HOMEPATH)\Desktop\Lavio\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\Intermediates\</IntDir>
+    <IncludePath>$(SolutionDir)Dependencies/GLFW/include;$(SolutionDir)Dependencies/GLEW/include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)Dependencies\GLFW\lib-vc2015;$(LibraryPath);$(SolutionDir)Dependencies\GLEW\lib</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <DisableSpecificWarnings>4521;4522;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>GLEW_STATIC;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_USE_MATH_DEFINES;_LIB;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>$(SolutionDir)Lavio\Libraries;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <BasicRuntimeChecks>UninitializedLocalUsageCheck</BasicRuntimeChecks>
+      <OmitFramePointers>false</OmitFramePointers>
+      <DisableSpecificWarnings>4521;4522;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>glfw3.lib;opengl32.lib;glew32s.lib;FreeImage.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <DelayLoadDLLs>OpenGLContext.DLL, Debug.DLL</DelayLoadDLLs>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)Lavio\Libraries;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <PreprocessorDefinitions>GLEW_STATIC;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <DisableSpecificWarnings>4521;4522;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>glfw3.lib;opengl32.lib;glew32s.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <DelayLoadDLLs>OpenGLContext.DLL</DelayLoadDLLs>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>GLEW_STATIC;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_USE_MATH_DEFINES;_LIB;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>false</OmitFramePointers>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <AdditionalIncludeDirectories>$(SolutionDir)Lavio\Libraries;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4521;4522;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>glfw3.lib;opengl32.lib;glew32s.lib;FreeImage.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <DelayLoadDLLs>OpenGLContext.DLL, Debug.DLL</DelayLoadDLLs>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
