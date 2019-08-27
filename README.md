@@ -1,29 +1,11 @@
 # README #
 
-This README would normally document whatever steps are necessary to get your application up and running.
-
-### What is this repository for? ###
-
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+Lavio is a simple 2D C++ game engine that I created as an early learning project for C++ and OpenGL. Lavio includes a graphics abstraction layer that lays a foundation for using a graphics library of your choice. There is basic support for modern OpenGL built-in alongside two simple 2D rendering engines. 
 
 ### How do I get set up? ###
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+Lavio has two dependencies that are included in the repository:
+* FreeType 2.7
+* glew 1.13
 
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+Lavio can be built using MSVC. There is an included Visual Studio project sln for Visual Studio 14. Any version after 10 should be able to open the project.
