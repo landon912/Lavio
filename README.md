@@ -5,7 +5,11 @@ Lavio is a simple 2D C++ game engine that I created as an early learning project
 ### How do I get set up? ###
 
 Lavio has two dependencies that are included in the repository:
-* FreeType 2.7
-* glew 1.13
+* FreeType 2.7 [(LICENSE)](Libs/freetype-2.7/docs/LICENSE.TXT)
+* glew 1.13 [(LICENSE)](Libs/glew-1.13.0/LICENSE.txt)
 
 Lavio can be built using MSVC. There is an included Visual Studio project sln for Visual Studio 14. Any version after 10 should be able to open the project.
+
+### License ###
+
+Lavio is licensed under MIT. See [LICENSE.md](LICENSE.md) for more details 
